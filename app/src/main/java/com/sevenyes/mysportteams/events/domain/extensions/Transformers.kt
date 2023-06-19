@@ -1,0 +1,43 @@
+package com.sevenyes.mysportteams.events.domain.extensions
+
+import com.sevenyes.mysportteams.data.network.models.Event
+import com.sevenyes.mysportteams.events.domain.models.DomainEvent
+
+fun Event.toDomainEvent(): DomainEvent = DomainEvent(
+    dateEvent = dateEvent.orEmpty(),
+    dateEventLocal = dateEventLocal.orEmpty(),
+    idAwayTeam = idAwayTeam.orEmpty(),
+    idEvent = idEvent.orEmpty(),
+    idHomeTeam = idHomeTeam.orEmpty(),
+    idLeague = idLeague.orEmpty(),
+    intAwayScore = intAwayScore.orEmpty(),
+    intHomeScore = intHomeScore.orEmpty(),
+    intRound = intRound.orEmpty(),
+    strAwayTeam = strAwayTeam.orEmpty(),
+    strBanner = strBanner.orEmpty(),
+    strCity = strCity.orEmpty(),
+    strCountry = strCountry.orEmpty(),
+    strDescriptionEN = strDescriptionEN.orEmpty(),
+    strEvent = strEvent.orEmpty(),
+    strEventAlternate = strEventAlternate.orEmpty(),
+    strFilename = strFilename.orEmpty(),
+    strHomeTeam = strHomeTeam.orEmpty(),
+    strLeague = strLeague.orEmpty(),
+    strLocked = strLocked.orEmpty(),
+    strPoster = strPoster.orEmpty(),
+    strPostponed = strPostponed.orEmpty(),
+    strResult = strResult.orEmpty(),
+    strSeason = strSeason.orEmpty(),
+    strSport = strSport.orEmpty(),
+    strSquare = strSquare.orEmpty(),
+    strStatus = strStatus.orEmpty(),
+    strThumb = strThumb.orEmpty(),
+    strTime = strTime.orEmpty(),
+    strTimeLocal = strTimeLocal.orEmpty(),
+    strTimestamp = strTimestamp.orEmpty(),
+    strTweet1 = strTweet1.orEmpty(),
+    strTweet2 = strTweet2.orEmpty(),
+    strTweet3 = strTweet3.orEmpty(),
+    strVenue = strVenue.orEmpty(),
+    strVideo = strVideo.orEmpty(),
+)
